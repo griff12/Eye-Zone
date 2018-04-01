@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbc-CI-E2j">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eJR-AU-u5O">
+            <objects>
+                <viewController id="sbc-CI-E2j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pN6-hx-bGp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 11" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-CZ-PNG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyezone logo (large horizontal)" translatesAutoresizingMaskIntoConstraints="NO" id="oWj-y7-rvd">
+                                <rect key="frame" x="32" y="271" width="310" height="125.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aLh-CZ-PNG" firstAttribute="leading" secondItem="1Zh-uZ-tAt" secondAttribute="leading" id="BRP-uN-Jvl"/>
+                            <constraint firstItem="aLh-CZ-PNG" firstAttribute="trailing" secondItem="1Zh-uZ-tAt" secondAttribute="trailing" id="Gqo-3m-iRl"/>
+                            <constraint firstItem="oWj-y7-rvd" firstAttribute="centerX" secondItem="aLh-CZ-PNG" secondAttribute="centerX" id="Nwh-ob-Ury"/>
+                            <constraint firstItem="aLh-CZ-PNG" firstAttribute="bottom" secondItem="1Zh-uZ-tAt" secondAttribute="bottom" id="YRP-Lh-NMy"/>
+                            <constraint firstItem="aLh-CZ-PNG" firstAttribute="top" secondItem="pN6-hx-bGp" secondAttribute="top" id="pWH-Xc-zoA"/>
+                            <constraint firstItem="oWj-y7-rvd" firstAttribute="centerY" secondItem="aLh-CZ-PNG" secondAttribute="centerY" id="yGP-CU-1Zj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Zh-uZ-tAt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZY-Ub-2zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle 11" width="375" height="667"/>
+        <image name="eyezone logo (large horizontal)" width="310" height="126"/>
+    </resources>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>636324256318-onitc6tq2pa2qk40ltb25lnb651qq54h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.636324256318-onitc6tq2pa2qk40ltb25lnb651qq54h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCl2Evmxsm7RP5RB6Z2W3unPEw5hNcgKtk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>636324256318</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.theyoungsalmon.Eye-Zone</string>
+	<key>PROJECT_ID</key>
+	<string>eye-zone-b2434</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eye-zone-b2434.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:636324256318:ios:ad80d5ce751a5f67</string>
+	<key>DATABASE_URL</key>
+	<string>https://eye-zone-b2434.firebaseio.com</string>
+</dict>
+</plist>
