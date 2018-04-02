@@ -42,6 +42,7 @@
                     </view>
                     <connections>
                         <segue destination="YXl-W4-tmS" kind="presentation" identifier="goToRegistration" animates="NO" id="k0K-3l-6Ch"/>
+                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="skipToMain" id="1gU-dx-oNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52n-i0-YJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,9 +132,6 @@
                         <viewLayoutGuide key="safeArea" id="W7b-lK-nwc"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hag-Cg-wbg"/>
-                    <connections>
-                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToMain" id="Coc-mf-C84"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOE-ET-gGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +162,6 @@
                                 <state key="normal" image="signInButton"/>
                                 <connections>
                                     <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8m-to-HkM"/>
-                                    <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToMain" id="ftF-sy-gY6"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usernameTextField" translatesAutoresizingMaskIntoConstraints="NO" id="yAh-gB-y2x">
@@ -223,6 +220,7 @@
                         <outlet property="eyeZoneHeight" destination="QPg-sT-w2d" id="Mtk-Hw-unb"/>
                         <outlet property="passwordTextField" destination="A7E-2s-yQA" id="3u4-8d-0JN"/>
                         <outlet property="usernameTextField" destination="q3A-SQ-jKr" id="WAk-Qm-G8a"/>
+                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToChat" id="aiW-5O-Xwo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -270,7 +268,6 @@
                                 <state key="normal" image="registerButton"/>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="p6L-f8-Zyl" eventType="touchUpInside" id="MlP-91-AdM"/>
-                                    <action selector="signInButtonPressed:" destination="p6L-f8-Zyl" eventType="touchUpInside" id="pHj-Bd-fXx"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usernameTextField" translatesAutoresizingMaskIntoConstraints="NO" id="iXI-dS-NDQ">
@@ -292,7 +289,7 @@
                                     <constraint firstAttribute="width" constant="310" id="fLi-mR-pnB"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="emv-Dn-l14">
+                            <textField opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="password" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="emv-Dn-l14">
                                 <rect key="frame" x="144.5" y="740" width="86" height="23"/>
                                 <color key="textColor" red="0.68620789049999997" green="0.6863226295" blue="0.68618351219999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -329,7 +326,7 @@
                         <outlet property="emailTextField" destination="L9E-zw-8OB" id="YK4-0z-Ngt"/>
                         <outlet property="eyeZoneHeight" destination="dLx-80-6c7" id="CCJ-Ln-VUt"/>
                         <outlet property="passwordTextField" destination="emv-Dn-l14" id="nPC-km-KA3"/>
-                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToMain" id="Le4-H2-uex"/>
+                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToMain" id="1m8-Br-3eu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPI-Bf-WFi" sceneMemberID="firstResponder"/>
@@ -347,6 +344,6 @@
         <image name="usernameTextField" width="375" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Le4-H2-uex"/>
+        <segue reference="1gU-dx-oNr"/>
     </inferredMetricsTieBreakers>
 </document>

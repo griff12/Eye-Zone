@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var credentialsHeight: NSLayoutConstraint!
     
@@ -22,6 +22,8 @@ class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -30,6 +32,9 @@ class RegistrationViewController: UIViewController {
             self.credentialsHeight.constant = 300
             
             self.view.layoutIfNeeded() }
+        emailTextField.returnKeyType = UIReturnKeyType.done
+        passwordTextField.returnKeyType = UIReturnKeyType.done
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,19 +46,24 @@ class RegistrationViewController: UIViewController {
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {
         (user, error) in
-        if error != nil {
+        if error != nil || user == nil {
             print(error!)
         }
         else {
             print("Registration Successful")
-        }
+            self.performSegue(withIdentifier: "goToMain", sender: self)
+            
+            }
         SVProgressHUD.dismiss()
-        self.performSegue(withIdentifier: "goToMain", sender: self)
+        
         }
         
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 
     
     /*

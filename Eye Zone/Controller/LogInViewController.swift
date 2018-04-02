@@ -10,15 +10,18 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var credentialsHeight: NSLayoutConstraint!
     @IBOutlet var eyeZoneHeight: NSLayoutConstraint!
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                // Do any additional setup after loading the view.
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,7 +29,10 @@ class LogInViewController: UIViewController {
             self.eyeZoneHeight.constant = -150
             self.credentialsHeight.constant = 300
             
-            self.view.layoutIfNeeded() }  
+            self.view.layoutIfNeeded() }
+        usernameTextField.returnKeyType = UIReturnKeyType.done
+        passwordTextField.returnKeyType = UIReturnKeyType.done
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,20 +47,25 @@ class LogInViewController: UIViewController {
         Auth.auth().signIn(withEmail: usernameTextField.text!, password: passwordTextField.text!)
         {(user, error) in
             
-            if error != nil {
+            if error != nil || user == nil {
                 print(error!)
             }
             else {
                 
                 print("Log in successful!")
                 
-                SVProgressHUD.dismiss()
+                
                 
                 self.performSegue(withIdentifier: "goToMain", sender: self)
                 
             }
-            
+            SVProgressHUD.dismiss()
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     /*
