@@ -56,7 +56,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
                 
                 
                 
-                self.performSegue(withIdentifier: "goToMain", sender: self)
+                self.performSegue(withIdentifier: "goToChat", sender: self)
                 
             }
             SVProgressHUD.dismiss()

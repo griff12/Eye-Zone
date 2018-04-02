@@ -11,11 +11,21 @@ import FacebookCore
 import FacebookLogin
 import Firebase
 
-class OptionsViewController: UIViewController {
 
+class OptionsViewController: UIViewController {
+    
+    
+    
+    @IBOutlet var stackView: UIStackView!
+    @IBOutlet var backgroundView: UIImageView!
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var eyeZoneLogo: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +34,18 @@ class OptionsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.stackView.transform = CGAffineTransform(translationX: -stackView.frame.width + 10, y: 0 )
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 1){
+            
+            self.stackView.transform = .identity
+                   }
+    }
+    
     @IBAction func registerButtonPressed(_ sender: UIButton) {
     }
     @IBAction func signInButtonPressed(_ sender: Any) {
