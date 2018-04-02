@@ -15,7 +15,7 @@
 		F4AA6DE22070744F00937CC5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA6DE12070744F00937CC5 /* RegistrationViewController.swift */; };
 		F4AA6DE420707C9B00937CC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AA6DE320707C9B00937CC5 /* GoogleService-Info.plist */; };
 		F4BF642D20617893002F8FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF642C20617893002F8FF2 /* AppDelegate.swift */; };
-		F4BF642F20617893002F8FF2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF642E20617893002F8FF2 /* ChatViewController.swift */; };
+		F4BF642F20617893002F8FF2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF642E20617893002F8FF2 /* MainViewController.swift */; };
 		F4BF643220617893002F8FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BF643020617893002F8FF2 /* Main.storyboard */; };
 		F4BF644320617998002F8FF2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF644220617998002F8FF2 /* LogInViewController.swift */; };
 		F4BF6445206179AA002F8FF2 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF6444206179AA002F8FF2 /* OptionsViewController.swift */; };
@@ -35,7 +35,7 @@
 		F4AA6DE320707C9B00937CC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4BF642920617893002F8FF2 /* Eye Zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eye Zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BF642C20617893002F8FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4BF642E20617893002F8FF2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F4BF642E20617893002F8FF2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F4BF643120617893002F8FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BF643820617893002F8FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4BF644220617998002F8FF2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				F4BF6444206179AA002F8FF2 /* OptionsViewController.swift */,
 				F4BF644220617998002F8FF2 /* LogInViewController.swift */,
 				F4AA6DE12070744F00937CC5 /* RegistrationViewController.swift */,
-				F4BF642E20617893002F8FF2 /* ChatViewController.swift */,
+				F4BF642E20617893002F8FF2 /* MainViewController.swift */,
 				F49BE2B820632B1E00395478 /* Assets.xcassets */,
 			);
 			path = Controller;
@@ -306,7 +306,7 @@
 			files = (
 				F4FA1F042061C8CC00B18A60 /* CustomMessageCell.swift in Sources */,
 				F4AA6DE020706C6100937CC5 /* WelcomeViewController.swift in Sources */,
-				F4BF642F20617893002F8FF2 /* ChatViewController.swift in Sources */,
+				F4BF642F20617893002F8FF2 /* MainViewController.swift in Sources */,
 				F4AA6DE22070744F00937CC5 /* RegistrationViewController.swift in Sources */,
 				F4BF642D20617893002F8FF2 /* AppDelegate.swift in Sources */,
 				F4BF644320617998002F8FF2 /* LogInViewController.swift in Sources */,

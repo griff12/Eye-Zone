@@ -132,6 +132,9 @@
                         <viewLayoutGuide key="safeArea" id="W7b-lK-nwc"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hag-Cg-wbg"/>
+                    <connections>
+                        <segue destination="hgH-4q-4Ua" kind="presentation" identifier="goToMain" id="vqB-gJ-I60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOE-ET-gGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,17 +230,30 @@
             </objects>
             <point key="canvasLocation" x="1295" y="224"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="SSM-Ig-I4x">
             <objects>
-                <viewController id="hgH-4q-4Ua" sceneMemberID="viewController">
+                <viewController id="hgH-4q-4Ua" customClass="MainViewController" customModule="Eye_Zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Pa-96-eyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcf-wP-X3S">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="hgH-4q-4Ua" eventType="touchUpInside" id="n4Y-U5-02Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OEt-7L-loh"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lj9-3w-aqy"/>
+                    <connections>
+                        <segue destination="9Pd-Vd-Vts" kind="presentation" identifier="backToWelcome" id="uNW-kj-Et4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZN-RT-WHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,6 +360,6 @@
         <image name="usernameTextField" width="375" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1gU-dx-oNr"/>
+        <segue reference="vqB-gJ-I60"/>
     </inferredMetricsTieBreakers>
 </document>
