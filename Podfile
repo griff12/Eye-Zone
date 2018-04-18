@@ -17,6 +17,7 @@ pod 'FBSDKLoginKit'
 pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'FacebookShare'
+pod 'RealmSwift'
 end
 
 post_install do |installer|

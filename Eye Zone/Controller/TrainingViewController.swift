@@ -8,14 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class TrainingViewController: UIViewController {
     
     // MARK: - Properties and variables
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var resourceIdTextField: UITextField!
     @IBOutlet weak var customLayoutButton: UIButton!
-    @IBOutlet weak var compositedLayoutButton: UIButton!
     @IBOutlet weak var inputDetailsView: UIView!
     private var viewMoved:CGFloat = 0.0
     
@@ -25,14 +24,14 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Initialize the VidyoClient Library
-//        VCConnectorPkg.vcInitialize()
+        VCConnectorPkg.vcInitialize()
         
         // Dismissing keyboard on tap
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TrainingViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(TrainingViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(TrainingViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,10 +72,10 @@ class HomeViewController: UIViewController {
     @IBAction func textFieldEditingChanged(_ sender: Any) {
         if (!(nameTextField.text?.isEmpty)! && !(resourceIdTextField.text?.isEmpty)!) {
             customLayoutButton.isEnabled = true
-            compositedLayoutButton.isEnabled = true
+           
         } else {
             customLayoutButton.isEnabled = false
-            compositedLayoutButton.isEnabled = false
+          
         }
     }
     
@@ -90,16 +89,11 @@ class HomeViewController: UIViewController {
     
     // MARK: - Navigation
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "compositedSegue"{
-//            let vc = segue.destination as! CompositedViewController
-//            vc.displayName = self.nameTextField.text!
-//            vc.resourceID = self.resourceIdTextField.text!
-//        } else if segue.identifier == "customSegue"{
-//            let vc = segue.destination as! CustomViewController
-//            vc.displayName = self.nameTextField.text!
-//            vc.resourceID = self.resourceIdTextField.text!
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   
+            let vc = segue.destination as! CustomViewController
+            vc.displayName = self.nameTextField.text!
+            vc.resourceID = self.resourceIdTextField.text!
+        }
+    
 }
-

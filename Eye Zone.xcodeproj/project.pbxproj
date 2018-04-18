@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		219E80C6696A62B5E4F72FC0 /* Pods_Eye_Zone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430C2497990AC73636728512 /* Pods_Eye_Zone.framework */; };
 		F43B7CC92086BB3000E61D29 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B7CC82086BB3000E61D29 /* TrainingViewController.swift */; };
-		F43B7CCB2086BB4300E61D29 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B7CCA2086BB4300E61D29 /* HomeworkViewController.swift */; };
+		F43B7CDC2086D43F00E61D29 /* VidyoClientIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43B7CDB2086D43F00E61D29 /* VidyoClientIOS.framework */; };
+		F43B7CDD2086D43F00E61D29 /* VidyoClientIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F43B7CDB2086D43F00E61D29 /* VidyoClientIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F440FC08208711AC00591EB1 /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440FC07208711AC00591EB1 /* HomeworkViewController.swift */; };
+		F440FC0A2087174D00591EB1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440FC092087174D00591EB1 /* Item.swift */; };
 		F44CBDA72062FF9D005CCE52 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44CBDA62062FF9D005CCE52 /* Message.swift */; };
 		F49BE2B920632B1E00395478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49BE2B820632B1E00395478 /* Assets.xcassets */; };
 		F49CA1162064697100C8CE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49CA1152064697100C8CE7B /* LaunchScreen.storyboard */; };
@@ -21,6 +24,26 @@
 		F4BF643220617893002F8FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BF643020617893002F8FF2 /* Main.storyboard */; };
 		F4BF644320617998002F8FF2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF644220617998002F8FF2 /* LogInViewController.swift */; };
 		F4BF6445206179AA002F8FF2 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF6444206179AA002F8FF2 /* OptionsViewController.swift */; };
+		F4C476302086E0970066A827 /* speakerOn.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476242086E0940066A827 /* speakerOn.png */; };
+		F4C476312086E0970066A827 /* speakerOff.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476252086E0950066A827 /* speakerOff.png */; };
+		F4C476322086E0970066A827 /* microphoneOnWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476262086E0950066A827 /* microphoneOnWhite.png */; };
+		F4C476332086E0970066A827 /* Vidyo.io-Vertical-Dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476272086E0950066A827 /* Vidyo.io-Vertical-Dark@2x.png */; };
+		F4C476342086E0970066A827 /* cameraOff.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476282086E0950066A827 /* cameraOff.png */; };
+		F4C476352086E0970066A827 /* microphoneOff.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C476292086E0960066A827 /* microphoneOff.png */; };
+		F4C476362086E0970066A827 /* callStart.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762A2086E0960066A827 /* callStart.png */; };
+		F4C476372086E0970066A827 /* cameraSwitch.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762B2086E0960066A827 /* cameraSwitch.png */; };
+		F4C476382086E0970066A827 /* cameraOnWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762C2086E0960066A827 /* cameraOnWhite.png */; };
+		F4C476392086E0970066A827 /* cameraOn.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762D2086E0960066A827 /* cameraOn.png */; };
+		F4C4763A2086E0970066A827 /* callEnd.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762E2086E0970066A827 /* callEnd.png */; };
+		F4C4763B2086E0970066A827 /* microphoneOn.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C4762F2086E0970066A827 /* microphoneOn.png */; };
+		F4C4763D2086E1250066A827 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4763C2086E1250066A827 /* CustomViewController.swift */; };
+		F4C4763F2086E32C0066A827 /* RemoteViewsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4763E2086E32C0066A827 /* RemoteViewsHelper.swift */; };
+		F4C476402086E8540066A827 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C4761E2086DC8E0066A827 /* AudioToolbox.framework */; };
+		F4C476412086E8540066A827 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C476212086DC8E0066A827 /* AVFoundation.framework */; };
+		F4C476422086E8540066A827 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C4761F2086DC8E0066A827 /* CoreLocation.framework */; };
+		F4C476432086E8540066A827 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C476202086DC8E0066A827 /* CoreMedia.framework */; };
+		F4C476442086E8540066A827 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C476232086DC8F0066A827 /* SystemConfiguration.framework */; };
+		F4C476452086E8540066A827 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C476222086DC8F0066A827 /* UIKit.framework */; };
 		F4FA1F042061C8CC00B18A60 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA1F022061C8CC00B18A60 /* CustomMessageCell.swift */; };
 		F4FA1F052061C8CC00B18A60 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FA1F032061C8CC00B18A60 /* CustomMessageCell.xib */; };
 /* End PBXBuildFile section */
@@ -32,6 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F43B7CDD2086D43F00E61D29 /* VidyoClientIOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,9 +67,10 @@
 		70F7CA40DDA92AD2FCE1EFD5 /* Pods-Eye Zone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye Zone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eye Zone/Pods-Eye Zone.release.xcconfig"; sourceTree = "<group>"; };
 		74DC0FE38B35A86C3E2453DD /* Pods-Eye Zone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye Zone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eye Zone/Pods-Eye Zone.debug.xcconfig"; sourceTree = "<group>"; };
 		F43B7CC82086BB3000E61D29 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
-		F43B7CCA2086BB4300E61D29 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
 		F43B7CD42086C4E000E61D29 /* Eye Zone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Eye Zone.entitlements"; sourceTree = "<group>"; };
-		F43B7CD72086C95600E61D29 /* VidyoConnectorSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VidyoConnectorSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F43B7CDB2086D43F00E61D29 /* VidyoClientIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VidyoClientIOS.framework; path = Vidyo/VidyoClientIOS.framework; sourceTree = "<group>"; };
+		F440FC07208711AC00591EB1 /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		F440FC092087174D00591EB1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F44CBDA62062FF9D005CCE52 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F49BE2B820632B1E00395478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49CA1152064697100C8CE7B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +84,26 @@
 		F4BF643820617893002F8FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4BF644220617998002F8FF2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		F4BF6444206179AA002F8FF2 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		F4C4761E2086DC8E0066A827 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F4C4761F2086DC8E0066A827 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F4C476202086DC8E0066A827 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F4C476212086DC8E0066A827 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F4C476222086DC8F0066A827 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4C476232086DC8F0066A827 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F4C476242086E0940066A827 /* speakerOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakerOn.png; sourceTree = "<group>"; };
+		F4C476252086E0950066A827 /* speakerOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakerOff.png; sourceTree = "<group>"; };
+		F4C476262086E0950066A827 /* microphoneOnWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphoneOnWhite.png; sourceTree = "<group>"; };
+		F4C476272086E0950066A827 /* Vidyo.io-Vertical-Dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vidyo.io-Vertical-Dark@2x.png"; sourceTree = "<group>"; };
+		F4C476282086E0950066A827 /* cameraOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraOff.png; sourceTree = "<group>"; };
+		F4C476292086E0960066A827 /* microphoneOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphoneOff.png; sourceTree = "<group>"; };
+		F4C4762A2086E0960066A827 /* callStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callStart.png; sourceTree = "<group>"; };
+		F4C4762B2086E0960066A827 /* cameraSwitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraSwitch.png; sourceTree = "<group>"; };
+		F4C4762C2086E0960066A827 /* cameraOnWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraOnWhite.png; sourceTree = "<group>"; };
+		F4C4762D2086E0960066A827 /* cameraOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraOn.png; sourceTree = "<group>"; };
+		F4C4762E2086E0970066A827 /* callEnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callEnd.png; sourceTree = "<group>"; };
+		F4C4762F2086E0970066A827 /* microphoneOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphoneOn.png; sourceTree = "<group>"; };
+		F4C4763C2086E1250066A827 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		F4C4763E2086E32C0066A827 /* RemoteViewsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewsHelper.swift; sourceTree = "<group>"; };
 		F4FA1F022061C8CC00B18A60 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		F4FA1F032061C8CC00B18A60 /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +113,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C476402086E8540066A827 /* AudioToolbox.framework in Frameworks */,
+				F4C476412086E8540066A827 /* AVFoundation.framework in Frameworks */,
+				F4C476422086E8540066A827 /* CoreLocation.framework in Frameworks */,
+				F4C476432086E8540066A827 /* CoreMedia.framework in Frameworks */,
+				F4C476442086E8540066A827 /* SystemConfiguration.framework in Frameworks */,
+				F4C476452086E8540066A827 /* UIKit.framework in Frameworks */,
 				219E80C6696A62B5E4F72FC0 /* Pods_Eye_Zone.framework in Frameworks */,
+				F43B7CDC2086D43F00E61D29 /* VidyoClientIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +130,12 @@
 		5AD409F5A3148614F9D037D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4C4761E2086DC8E0066A827 /* AudioToolbox.framework */,
+				F4C476212086DC8E0066A827 /* AVFoundation.framework */,
+				F4C4761F2086DC8E0066A827 /* CoreLocation.framework */,
+				F4C476202086DC8E0066A827 /* CoreMedia.framework */,
+				F4C476232086DC8F0066A827 /* SystemConfiguration.framework */,
+				F4C476222086DC8F0066A827 /* UIKit.framework */,
 				430C2497990AC73636728512 /* Pods_Eye_Zone.framework */,
 			);
 			name = Frameworks;
@@ -95,7 +153,7 @@
 		F4BF642020617893002F8FF2 = {
 			isa = PBXGroup;
 			children = (
-				F43B7CD72086C95600E61D29 /* VidyoConnectorSwift-Bridging-Header.h */,
+				F43B7CDB2086D43F00E61D29 /* VidyoClientIOS.framework */,
 				F4BF642B20617893002F8FF2 /* Eye Zone */,
 				F4BF642A20617893002F8FF2 /* Products */,
 				F4B049F8258204B95DAF259C /* Pods */,
@@ -128,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				F44CBDA62062FF9D005CCE52 /* Message.swift */,
+				F440FC092087174D00591EB1 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,13 +205,15 @@
 			isa = PBXGroup;
 			children = (
 				F4BF642C20617893002F8FF2 /* AppDelegate.swift */,
+				F4C4763E2086E32C0066A827 /* RemoteViewsHelper.swift */,
 				F4AA6DDF20706C6100937CC5 /* WelcomeViewController.swift */,
 				F4BF6444206179AA002F8FF2 /* OptionsViewController.swift */,
 				F4BF644220617998002F8FF2 /* LogInViewController.swift */,
 				F4AA6DE12070744F00937CC5 /* RegistrationViewController.swift */,
 				F4BF642E20617893002F8FF2 /* MainViewController.swift */,
-				F43B7CCA2086BB4300E61D29 /* HomeworkViewController.swift */,
+				F440FC07208711AC00591EB1 /* HomeworkViewController.swift */,
 				F43B7CC82086BB3000E61D29 /* TrainingViewController.swift */,
+				F4C4763C2086E1250066A827 /* CustomViewController.swift */,
 				F49BE2B820632B1E00395478 /* Assets.xcassets */,
 			);
 			path = Controller;
@@ -161,6 +222,18 @@
 		F4BF6448206179EC002F8FF2 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F4C4762E2086E0970066A827 /* callEnd.png */,
+				F4C4762A2086E0960066A827 /* callStart.png */,
+				F4C476282086E0950066A827 /* cameraOff.png */,
+				F4C4762D2086E0960066A827 /* cameraOn.png */,
+				F4C4762C2086E0960066A827 /* cameraOnWhite.png */,
+				F4C4762B2086E0960066A827 /* cameraSwitch.png */,
+				F4C476292086E0960066A827 /* microphoneOff.png */,
+				F4C4762F2086E0970066A827 /* microphoneOn.png */,
+				F4C476262086E0950066A827 /* microphoneOnWhite.png */,
+				F4C476252086E0950066A827 /* speakerOff.png */,
+				F4C476242086E0940066A827 /* speakerOn.png */,
+				F4C476272086E0950066A827 /* Vidyo.io-Vertical-Dark@2x.png */,
 				F4FA1F022061C8CC00B18A60 /* CustomMessageCell.swift */,
 				F4FA1F032061C8CC00B18A60 /* CustomMessageCell.xib */,
 			);
@@ -198,7 +271,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eye Zone";
 				TargetAttributes = {
 					F4BF642820617893002F8FF2 = {
@@ -235,10 +308,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C476312086E0970066A827 /* speakerOff.png in Resources */,
+				F4C4763B2086E0970066A827 /* microphoneOn.png in Resources */,
+				F4C4763A2086E0970066A827 /* callEnd.png in Resources */,
+				F4C476392086E0970066A827 /* cameraOn.png in Resources */,
+				F4C476352086E0970066A827 /* microphoneOff.png in Resources */,
 				F4FA1F052061C8CC00B18A60 /* CustomMessageCell.xib in Resources */,
+				F4C476342086E0970066A827 /* cameraOff.png in Resources */,
+				F4C476332086E0970066A827 /* Vidyo.io-Vertical-Dark@2x.png in Resources */,
+				F4C476382086E0970066A827 /* cameraOnWhite.png in Resources */,
+				F4C476322086E0970066A827 /* microphoneOnWhite.png in Resources */,
 				F49CA1162064697100C8CE7B /* LaunchScreen.storyboard in Resources */,
 				F4AA6DE420707C9B00937CC5 /* GoogleService-Info.plist in Resources */,
 				F49BE2B920632B1E00395478 /* Assets.xcassets in Resources */,
+				F4C476302086E0970066A827 /* speakerOn.png in Resources */,
+				F4C476372086E0970066A827 /* cameraSwitch.png in Resources */,
+				F4C476362086E0970066A827 /* callStart.png in Resources */,
 				F4BF643220617893002F8FF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +386,8 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -317,6 +404,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -333,15 +422,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C4763F2086E32C0066A827 /* RemoteViewsHelper.swift in Sources */,
 				F43B7CC92086BB3000E61D29 /* TrainingViewController.swift in Sources */,
+				F440FC08208711AC00591EB1 /* HomeworkViewController.swift in Sources */,
 				F4FA1F042061C8CC00B18A60 /* CustomMessageCell.swift in Sources */,
 				F4AA6DE020706C6100937CC5 /* WelcomeViewController.swift in Sources */,
 				F4BF642F20617893002F8FF2 /* MainViewController.swift in Sources */,
 				F4AA6DE22070744F00937CC5 /* RegistrationViewController.swift in Sources */,
+				F440FC0A2087174D00591EB1 /* Item.swift in Sources */,
 				F4BF642D20617893002F8FF2 /* AppDelegate.swift in Sources */,
 				F4BF644320617998002F8FF2 /* LogInViewController.swift in Sources */,
+				F4C4763D2086E1250066A827 /* CustomViewController.swift in Sources */,
 				F4BF6445206179AA002F8FF2 /* OptionsViewController.swift in Sources */,
-				F43B7CCB2086BB4300E61D29 /* HomeworkViewController.swift in Sources */,
 				F44CBDA72062FF9D005CCE52 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +466,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -381,6 +474,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -408,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -431,6 +525,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -438,6 +533,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -459,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -481,6 +577,7 @@
 					"$(PROJECT_DIR)/Eye\\ Zone",
 					"$(PROJECT_DIR)/Eye\\ Zone",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vidyo",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,7 +598,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theyoungsalmon.Eye-Zone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Vidyo/VidyoConnectorSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
@@ -522,6 +619,7 @@
 					"$(PROJECT_DIR)/Eye\\ Zone",
 					"$(PROJECT_DIR)/Eye\\ Zone",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vidyo",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,7 +640,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.theyoungsalmon.Eye-Zone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Vidyo/VidyoConnectorSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
