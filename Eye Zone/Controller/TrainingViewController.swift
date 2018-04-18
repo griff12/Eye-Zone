@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         // Initialize the VidyoClient Library
-        VCConnectorPkg.vcInitialize()
+//        VCConnectorPkg.vcInitialize()
         
         // Dismissing keyboard on tap
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.dismissKeyboard))
@@ -90,16 +90,16 @@ class HomeViewController: UIViewController {
     
     // MARK: - Navigation
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "compositedSegue"{
-            let vc = segue.destination as! CompositedViewController
-            vc.displayName = self.nameTextField.text!
-            vc.resourceID = self.resourceIdTextField.text!
-        } else if segue.identifier == "customSegue"{
-            let vc = segue.destination as! CustomViewController
-            vc.displayName = self.nameTextField.text!
-            vc.resourceID = self.resourceIdTextField.text!
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "compositedSegue"{
+//            let vc = segue.destination as! CompositedViewController
+//            vc.displayName = self.nameTextField.text!
+//            vc.resourceID = self.resourceIdTextField.text!
+//        } else if segue.identifier == "customSegue"{
+//            let vc = segue.destination as! CustomViewController
+//            vc.displayName = self.nameTextField.text!
+//            vc.resourceID = self.resourceIdTextField.text!
+//        }
+//    }
 }
 
