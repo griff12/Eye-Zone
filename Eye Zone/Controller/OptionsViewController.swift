@@ -12,7 +12,7 @@ import FacebookLogin
 import Firebase
 
 
-class OptionsViewController: UIViewController {
+class SignInOptionsViewController: UIViewController {
     
     
     
